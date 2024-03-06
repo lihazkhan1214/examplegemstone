@@ -2,12 +2,15 @@ import React from 'react';
 import heroimg from "../assets/gem.png";
 
 
+
 function Hero() {
   return (
     <div className='hero'>
 
     <img src={heroimg} alt="" />
-    <div className="content">      
+    <div className="content">  
+    
+    
     
     <h1 className="title">Discover the World of  Gemstones</h1>
     <p className="heropara">Discover the World of  Gemstones

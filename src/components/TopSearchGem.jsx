@@ -4,6 +4,8 @@ import cardimg2 from "../assets/card2.png";
 import cardimg3 from "../assets/card3.png";
 import cardimg4 from "../assets/card4.png";
 import cardimg5 from "../assets/card5.png";
+import fltimg1 from "../assets/Vector.png";
+import fltimg2 from "../assets/filter.png"
 
 import "./topsearch.css";
 
@@ -42,6 +44,15 @@ function TopSearchGem() {
   return (
     <div className='topsearchgem'>
       <h1 className="title">Gemstone Encyclopedia</h1>
+
+      <div className="filterContainer">
+      <img className='leftsideimg' src={fltimg1} alt="" />
+
+      <input type="text" placeholder='Search for gems...' />
+  
+      <img className='rightsideimg' src={fltimg2} alt="" />
+      
+      </div>
 
       <h2 className="subheading">Top Searched gemstones </h2>
 
