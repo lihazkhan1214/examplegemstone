@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import cardimg1 from "../assets/card1.png";
 import cardimg2 from "../assets/card2.png";
 import cardimg3 from "../assets/card3.png";
@@ -41,17 +41,53 @@ const cards = [
 
 
 function TopSearchGem() {
+
+
+
+
+  const [searchTerm, setSearchTerm] = useState('');
+  const [filteredCards, setFilteredCards] = useState(cards);
+  
+
+  // const handleSearch = (event) => {
+  //   setSearchTerm(event.target.value);
+  //   const filtered = cards.filter(item => item.title.toLowerCase().includes(event.target.value.toLowerCase()));
+  //   setFilteredCards(filtered);
+  // };
+
+  const handleSearch=(e)=>{
+  setSearchTerm(e.target.value);
+
+  const flitered=cards.filter(item=>item.title.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()))
+
+  setFilteredCards(flitered)
+
+
+  }
+
+
+ 
+
+
+
+
+
+
+
+
+
+
   return (
     <div className='topsearchgem'>
       <h1 className="title">Gemstone Encyclopedia</h1>
 
       <div className="filterContainer">
-      <img className='leftsideimg' src={fltimg1} alt="" />
+        <img className='leftsideimg' src={fltimg1} alt="" />
 
-      <input type="text" placeholder='Search for gems...' />
-  
-      <img className='rightsideimg' src={fltimg2} alt="" />
-      
+        <input type="text" placeholder='Search for gems...' onChange={handleSearch}  />
+
+        <img className='rightsideimg' src={fltimg2} alt="" />
+
       </div>
 
       <h2 className="subheading">Top Searched gemstones </h2>
@@ -59,28 +95,28 @@ function TopSearchGem() {
       <div className="cardContianer">
 
 
-      {
-        cards.map((item,ind)=>(
+        {
+          filteredCards.map((item, ind) => (
 
 
-          <div className="card">
-          <img src={item.img} alt="" />
+            <div className="card">
+              <img src={item.img} alt="" />
 
-          <h3 className="cardtitel">{item.title}</h3>
-
-
-        </div>
-
-        ))
-      }
+              <h3 className="cardtitel">{item.title}</h3>
 
 
-       
+            </div>
+
+          ))
+        }
 
 
 
-        
-        
+
+
+
+
+
 
 
 
