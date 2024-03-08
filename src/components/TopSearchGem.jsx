@@ -47,14 +47,6 @@ function TopSearchGem() {
 
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredCards, setFilteredCards] = useState(cards);
-  
-
-  // const handleSearch = (event) => {
-  //   setSearchTerm(event.target.value);
-  //   const filtered = cards.filter(item => item.title.toLowerCase().includes(event.target.value.toLowerCase()));
-  //   setFilteredCards(filtered);
-  // };
-
   const handleSearch=(e)=>{
   setSearchTerm(e.target.value);
 

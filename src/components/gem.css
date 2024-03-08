@@ -1,0 +1,76 @@
+.gemcontainer{
+    width: 100vw;
+    height:100%;
+    color: #FFF;
+
+
+}
+
+.gemcontainer img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.gemContent{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.gemContent .title{
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+}
+.gemContent .desc{
+    text-align: center;
+    margin-top: -30px;
+    font-size: 24px;
+    color: #FFF;
+    width: 800px;
+    font-weight: 500;
+}
+.gemContent .cardContainer{
+
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+
+}
+
+.gemContent .cardContainer .card{
+    width: 390px;
+    height: 100%;
+    background:#FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 10px;
+    border-radius: 16px;
+  
+
+
+   
+    padding: 20px;
+    position: relative;
+    color: #000;
+}
+.gemContent .cardContainer .card .cardimg{
+    width: 130px;
+    height: 150px;
+  position: relative;
+  z-index: 1;
+   
+    
+}
+.gemContent .cardContainer .card .desc{
+    font-size: 16px;
+
+}
+.gemContent .cardContainer .card button{
+    align-self: self-start;
+}
