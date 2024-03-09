@@ -1,0 +1,57 @@
+.gemReare{
+    background: #FFF;
+    padding: 50px;
+    position: relative;
+
+}
+.gemReare .title{
+    font-size: 30px;
+    font-weight: 600;
+    color: #0000;
+}
+
+.gemReareContainer{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+
+}
+
+.gemReareContainer .leftside{
+    width: 550px;
+    height: 550px;
+    display: flex;
+flex-direction: column;
+
+}
+
+.gemReareContainer .leftside .title{
+    font-size: 50px;
+    font-weight: 500;
+    color: #000000;
+}
+.gemReareContainer .leftside .desc{
+    font-size: 20px;
+    font-weight: normal;
+    color: #000000;
+    line-height: 30px;
+    text-align: justify;
+
+}
+.gemReareContainer .leftside button{
+    background: #6B03C1;
+    color: #FFF;
+    align-self: end;
+    border: none;
+    border-radius: 8px;
+    width: 120px;
+    height: 50px;
+    padding: 5px;
+}
+
+.gemReareContainer .rightside img{
+    width: 550px;
+    height: 550px;
+
+} 
