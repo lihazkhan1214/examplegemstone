@@ -4,6 +4,7 @@ import Hero from '../../components/Hero';
 import TopSearchGem from '../../components/TopSearchGem';
 import GemArticle from '../../components/GemArticle';
 import GemRearest from '../../components/GemRearest';
+import Rawgem from '../../components/Rawgem';
 
 function Homepage() {
   return (
@@ -13,7 +14,7 @@ function Homepage() {
 <TopSearchGem/>
 <GemArticle/>
 <GemRearest/>
-   
+   <Rawgem/>
 
 
     </>

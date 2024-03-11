@@ -1,0 +1,74 @@
+.rawgem{
+    width: 100%;
+    height:1800px;
+    color: #FFF;
+ 
+}
+
+.rawContent{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.rawgem img{
+    position: absolute;
+    z-index:-1;
+    height:1800px;
+    width: 100%;
+}
+.rawgem .rawContent .heading{
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFF;
+    /* text-align: center; */
+}
+.rawgem .rawContent .desc{
+    font-size: 24px;
+    color: #FFF;
+    font-weight: normal;
+}
+
+.rawgem .rawContent .cardContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  
+    
+}
+.rawgem .rawContent .cardContainer .card{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    background:#FFF;
+    gap: 20px;
+    position: relative;
+    border-radius: 16px;
+}
+.rawgem .rawContent .cardContainer .card .cardimg{
+    width: 378px;
+    height: 317px;
+    position: relative;
+    z-index: 1;
+}
+.rawgem .rawContent .cardContainer .card .cardtitle{
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 50px;
+}
+.rawgem .rawContent .cardContainer .card .carddesc{
+    color: #000;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.rawgem .rawContent button{
+
+    width: 160px;
+    height: 50px;
+    border: 1px solid #FFF;
+    align-self: center;
+
+}
