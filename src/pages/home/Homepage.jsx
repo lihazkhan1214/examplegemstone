@@ -5,6 +5,7 @@ import TopSearchGem from '../../components/TopSearchGem';
 import GemArticle from '../../components/GemArticle';
 import GemRearest from '../../components/GemRearest';
 import Rawgem from '../../components/Rawgem';
+import Footer from '../../components/Footer';
 
 function Homepage() {
   return (
@@ -16,6 +17,7 @@ function Homepage() {
 <GemRearest/>
    <Rawgem/>
 
+   <Footer/>
 
     </>
   )
